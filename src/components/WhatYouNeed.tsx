@@ -23,7 +23,7 @@ const features = [
   },
   {
     icon: <FaMotorcycle size={60} className="text-[#4caf72]" />,
-    title: "Free Delivery",
+    title: " Delivery",
     description: "Non diam phasellus vestibulum lorem sed risus tristique nulla.",
   },
 ];
