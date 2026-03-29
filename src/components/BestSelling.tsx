@@ -103,24 +103,14 @@ export default function BestSelling() {
         />
       </div>
 
-      {/* Leaf — bottom right */}
-      <div className="pointer-events-none select-none absolute bottom-0 right-0 z-0 w-28 md:w-44 opacity-80">
-        <Image
-          src="/green_leaves.png"
-          alt=""
-          width={200}
-          height={220}
-          className="w-full h-auto object-contain"
-        />
-      </div>
+      
+     
 
       {/* Cannabis icon + header */}
       <div className="relative z-10 text-center mb-10">
         {/* Small cannabis icon */}
         <div className="flex justify-center mb-2">
-          <svg viewBox="0 0 24 24" className="w-6 h-6 text-[#6abf69]" fill="currentColor">
-            <path d="M12 2C10 5 7 6 4 6c1 3 3 5 6 6-1 2-2 4-2 6h1c0-1 .5-3 1-4 .5 1 1 3 1 4h1c0-2-1-4-2-6 3-1 5-3 6-6-3 0-6-1-8-4z" />
-          </svg>
+          
         </div>
 
         <h2 className="font-['Playfair_Display',serif] text-3xl md:text-4xl font-bold text-gray-900">

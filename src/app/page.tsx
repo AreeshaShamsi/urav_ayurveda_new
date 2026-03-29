@@ -8,6 +8,7 @@ import NewProducts from "@/components/NewProducts";
 import WhatYouNeed from "@/components/WhatYouNeed";
 import BestSelling from "@/components/BestSelling";
 import Testimonials from "@/components/Testimonials";
+import StatsSection from "@/components/Statssection";
 
 function useScrollReveal() {
   useEffect(() => {
@@ -126,6 +127,8 @@ export default function HeroSection() {
         <div className="reveal-up"><NewProducts /></div>
         <div className="reveal-up"><WhatYouNeed /></div>
         <div className="reveal-up"><BestSelling /></div>
+        <div className="reveal-up"><StatsSection /></div>
+
         <div className="reveal-up"><Testimonials /></div>
 
       </div>
