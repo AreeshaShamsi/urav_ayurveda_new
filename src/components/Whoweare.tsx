@@ -55,21 +55,22 @@ export default function WhoWeAre() {
 
       <section className="section-bg relative w-full overflow-hidden py-40 px-6 md:px-16">
 
-        {/* Decorative dot grid — left side */}
-        <div className="pointer-events-none absolute left-40 top-16 grid grid-cols-6 gap-[6px] opacity-40 select-none z-30">
-          {Array.from({ length: 48 }).map((_, i) => (
-            <span
-              key={i}
-              className="h-[5px] w-[5px] rounded-full bg-green-800"
-            />
-          ))}
-        </div>
-
         {/* Main layout */}
         <div className="relative z-10 mx-auto flex max-w-6xl flex-col items-center gap-14 md:flex-row md:items-center md:gap-16">
 
           {/* ── LEFT: stacked images ── */}
           <div className="reveal-left relative flex-shrink-0 w-full max-w-[480px] md:w-[480px]">
+
+            {/* Decorative dot grid — overlapping top-left of primary image */}
+            <div className="pointer-events-none absolute left-[-10px] top-[-10px] grid grid-cols-6 gap-[6px] opacity-50 select-none z-30">
+              {Array.from({ length: 48 }).map((_, i) => (
+                <span
+                  key={i}
+                  className="h-[5px] w-[5px] rounded-full bg-green-800"
+                />
+              ))}
+            </div>
+
             {/* Primary image */}
             <div className="relative z-10 overflow-hidden rounded-2xl shadow-xl w-[78%]">
               <Image
@@ -103,17 +104,14 @@ export default function WhoWeAre() {
 
           {/* ── RIGHT: text content ── */}
           <div className="reveal-right flex flex-col gap-5 md:max-w-[520px]">
-            {/* Label */}
             <p className="text-sm font-semibold uppercase tracking-widest text-green-800">
               Who We Are
             </p>
 
-            {/* Heading */}
             <h2 className="font-['Playfair_Display',serif] text-3xl font-bold leading-snug text-gray-900 md:text-4xl">
               The Natural Way To Achieving Balance And Optimal Health
             </h2>
 
-            {/* Body */}
             <p className="text-base leading-relaxed text-gray-600">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
               tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
@@ -122,7 +120,6 @@ export default function WhoWeAre() {
               velit esse cillum dolore eu fugiat nulla pariatur.
             </p>
 
-            {/* CTA */}
             <button className="mt-2 w-fit rounded-full bg-[#2d5a27] px-8 py-3 text-sm font-semibold text-white shadow-md transition-all duration-300 hover:bg-[#1e3d1a] hover:shadow-lg hover:-translate-y-0.5 active:scale-95">
               Know More
             </button>
